@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style="display: inline-flex;flex-wrap: wrap">
+	<div class="col-md-4 col-lg-offset-4" style="flex: 2;margin:0 0 0 0;padding:10 0 0 0;flex-wrap: wrap">
+		<img src="data:image/jpg;base64, {{encoded_photo | safe}}" width="100%" style="border:5px solid #555" >
+	</div>
+
+   	 <div class="col-md-4 col-lg-offset-4" style="flex: 1;margin:0 0 0 0; margin-top: 18rem !important">
+   		 	<h2 style="color:black;">RESULT IS <b style="font-size:100px;">{{result}}</b></h2>	 
+   	 </div>
+</div>    
+{% endblock %}

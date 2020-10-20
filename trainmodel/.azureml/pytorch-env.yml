@@ -1,0 +1,20 @@
+# tutorial/.azureml/pytorch-env.yml
+name: pytorch-env
+channels:
+    - defaults
+    - pytorch
+dependencies:
+    - python=3.6.2
+    - pytorch
+    - torchvision
+    - pandas 
+    - scikit-learn
+    - scikit-image
+    - Pillow
+    - numpy
+    - pip
+    - pip:
+        - skorch
+        - opencv-python-headless
+        - azureml-sdk
+        - azureml-core
